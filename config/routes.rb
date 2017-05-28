@@ -15,5 +15,10 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  resources :carts
+  resources :carts do
+    collection do
+      delete :clean
+    end
+  end
+
 end
