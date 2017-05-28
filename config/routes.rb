@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   end
 
   resources :products
-  
+
   root 'welcome#index'
+
+  resources :carts
 end
