@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20170531031345) do
     t.string   "shipping_address"
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false
+    t.string   "token"
     t.boolean  "is_paid",          default: false
     t.string   "payment_method"
   end
